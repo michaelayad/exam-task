@@ -1,0 +1,435 @@
+{
+    "questions": [
+        {
+            "QuesID": 105191,
+            "id": 201339,
+            "Sort": 3,
+            "QuesType": "maq",
+            "QuesSubType": "d",
+            "QuesScore": 1,
+            "QuesHeadTxt": "Choisis les 2 réponses correctes dans les situations suivantes:",
+            "QuesTxt": "<p><strong>Tu indiques à ton ami ce qu’on utilise pour traduire des textes, qu’est-ce que tu dis?<\/strong><\/p>",
+            "QuesShowAns1": {
+                "txt": "",
+                "status": false
+            },
+            "QuesAns": [
+                {
+                    "txt": "<p>J’utilise des DVD pour regarder un film.<\/p>",
+                    "buttons": {
+                        "point": "a",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>Je sais traduire des textes.<\/p>",
+                    "buttons": {
+                        "point": "b",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>On utilise un CD.<\/p>",
+                    "buttons": {
+                        "point": "c",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>On utilise un dictionnaire.<\/p>",
+                    "buttons": {
+                        "point": "d",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>J’utilise l’Internet.<\/p>",
+                    "buttons": {
+                        "point": "e",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                }
+            ],
+            "QuesRightAns": [
+                "false",
+                "false",
+                "false",
+                "true",
+                "true"
+            ],
+            "index": null,
+            "Answer": false,
+            "userAnswer": "",
+            "numeric_type": 0
+        },
+        {
+            "QuesID": 105216,
+            "id": 201374,
+            "Sort": 4,
+            "QuesType": "maq",
+            "QuesSubType": "d",
+            "QuesScore": 1,
+            "QuesHeadTxt": "Choisis les 2 réponses correctes dans les situations suivantes:",
+            "QuesTxt": "<p><strong>Tu t’informes sur les goûts scolaires de ton copain, qu’est-ce que tu dis?<\/strong><\/p>",
+            "QuesShowAns1": {
+                "txt": "",
+                "status": false
+            },
+            "QuesAns": [
+                {
+                    "txt": "<p>Quelle matière tu aimes?<\/p>",
+                    "buttons": {
+                        "point": "a",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>Quelle langue tu préfères?<\/p>",
+                    "buttons": {
+                        "point": "b",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>Combien de cours tu as?<\/p>",
+                    "buttons": {
+                        "point": "c",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>À quelle heure tu vas au lycée?<\/p>",
+                    "buttons": {
+                        "point": "d",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>Quel sport tu aimes?<\/p>",
+                    "buttons": {
+                        "point": "e",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                }
+            ],
+            "QuesRightAns": [
+                "true",
+                "true",
+                "false",
+                "false",
+                "false"
+            ],
+            "index": null,
+            "Answer": false,
+            "userAnswer": "",
+            "numeric_type": 0
+        },
+        {
+            "QuesID": 105221,
+            "id": 201379,
+            "Sort": 5,
+            "QuesType": "maq",
+            "QuesSubType": "d",
+            "QuesScore": 1,
+            "QuesHeadTxt": "Choisis les 2 réponses correctes dans les situations suivantes:",
+            "QuesTxt": "<p><strong>Ton ami te demande: “Où tu vas pour acheter des bottines?”, qu’est-ce que tu dis?<\/strong><\/p>",
+            "QuesShowAns1": {
+                "txt": "",
+                "status": false
+            },
+            "QuesAns": [
+                {
+                    "txt": "<p>Au magasin de vêtements.<\/p>",
+                    "buttons": {
+                        "point": "a",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>Au magasin de chaussures.<\/p>",
+                    "buttons": {
+                        "point": "b",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>À la boutique de souvenirs.<\/p>",
+                    "buttons": {
+                        "point": "c",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>À la boutique de jouets.<\/p>",
+                    "buttons": {
+                        "point": "d",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>Aux boutiques du centre-ville.<\/p>",
+                    "buttons": {
+                        "point": "e",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                }
+            ],
+            "QuesRightAns": [
+                "false",
+                "true",
+                "false",
+                "false",
+                "true"
+            ],
+            "index": null,
+            "Answer": false,
+            "userAnswer": "",
+            "numeric_type": 0
+        },
+        {
+            "QuesID": 105225,
+            "id": 201383,
+            "Sort": 6,
+            "QuesType": "mcq",
+            "QuesSubType": "d",
+            "QuesScore": 1,
+            "QuesHeadTxt": "Choisis la bonne réponse:",
+            "QuesTxt": "<p><strong>Mon oncle vient ............... Fayoum.<\/strong><\/p>",
+            "QuesShowAns1": {
+                "txt": "",
+                "status": false
+            },
+            "QuesAns": [
+                {
+                    "txt": "<p>de<\/p>",
+                    "buttons": {
+                        "point": "a",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>&nbsp;du<\/p>",
+                    "buttons": {
+                        "point": "b",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>de la<\/p>",
+                    "buttons": {
+                        "point": "c",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                },
+                {
+                    "txt": "<p>des<\/p>",
+                    "buttons": {
+                        "point": "d",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                }
+            ],
+            "QuesRightAns": "b",
+            "index": null,
+            "Answer": false,
+            "userAnswer": "",
+            "numeric_type": 0
+        },
+        {
+            "QuesID": 105302,
+            "id": 201466,
+            "Sort": 12,
+            "QuesType": "essay",
+            "QuesSubType": "d",
+            "QuesScore": 1,
+            "QuesHeadTxt": "Réponds au mail suivant par 2 phrases complètes:",
+            "QuesTxt": "<p><img class=\"uploaded-inline-img-elem\" style=\"display: inline-block; vertical-align: middle; width: 422.36px; height: 72.99px;\" src=\".\/images\/exams\/inlineImages\/487d-45DD-4c8b4195-4E98-4d364bb6-40B0-449e.svg\"><\/p>",
+            "QuesShowAns1": {
+                "txt": "",
+                "status": false
+            },
+            "QuesAns": [
+                {
+                    "txt": "",
+                    "buttons": {
+                        "point": "a",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                }
+            ],
+            "QuesRightAns": "f",
+            "index": null,
+            "Answer": false,
+            "userAnswer": "",
+            "numeric_type": 0
+        },
+        {
+            "QuesID": 105306,
+            "id": 201471,
+            "Sort": 13,
+            "QuesType": "essay",
+            "QuesSubType": "d",
+            "QuesScore": 1,
+            "QuesHeadTxt": "Écris de 20 à 25 mots dans le sujet suivant: (Utilise les éléments suivants)",
+            "QuesTxt": "<div>Parle de tes activités et tes loisirs à un ami français:<\/div>\n<div style=\"text-align: center;\">(Internet – parc d’attractions)<\/div>",
+            "QuesShowAns1": {
+                "txt": "",
+                "status": false
+            },
+            "QuesAns": [
+                {
+                    "txt": "",
+                    "buttons": {
+                        "point": "a",
+                        "color": "text-[#151048]",
+                        "activeColor": "text-white",
+                        "background": "bg-white",
+                        "activeBackground": "bg-[#151048]",
+                        "border": "border",
+                        "borderColor": "border-[#151048]",
+                        "rounded": "rounded-full"
+                    }
+                }
+            ],
+            "QuesRightAns": "f",
+            "index": null,
+            "Answer": false,
+            "userAnswer": "",
+            "numeric_type": 0
+        }
+    ],
+    "metadata": {
+        "grade": 11,
+        "term": 2,
+        "unit": 1621,
+        "lesson": 10010,
+        "time": 10010,
+        "content": "exam",
+        "subject": "en Français",
+        "version": 1,
+        "year": 2024,
+        "timer": false,
+        "title": "en Français - <div style=\"font-size:20pt\">Examens Sur Unité 3<\/div><div style=\"font-size:20pt\">Examen 15<\/div><div style=\"height:15px\"><\/div>",
+        "language": "en"
+    }
+}
