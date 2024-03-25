@@ -1,26 +1,31 @@
-import React, { useState, useEffect } from "react";
-import parse from "html-react-parser";
-import data from "../../test.json";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
 import McqQuestion from "../../components/mcqQuestion";
 import MaqQuestion from "../../components/maqQuestion";
 import EssayQuestion from "../../components/essayQuestion";
 const Questions = ({ ...props }) => {
-  useEffect(() => {
-    // Handle local storage/Redux persistence of collapsed state (optional)
-  }, []);
+  const data = useSelector((state) => state?.exam?.data);
+
   return (
     <>
-      <div className="py-2">
-        <div className="fw-bold text-primary">
-          {data.questions[props.quesqionInd].QuesType === "mcq" && (
-            <McqQuestion />
-          )}
-          {data.questions[props.quesqionInd].QuesType === "maq" && (
-            <MaqQuestion />
-          )}
-          {data.questions[props.quesqionInd].QuesType === "essay" && (
-            <EssayQuestion />
-          )}
+      <div className="w-100 py-2">
+        <div className="w-100 fw-bold text-primary px-2">
+          {data.questions.map((q, ind) => (
+            <>
+              {data.questions[props.questionInd].QuesType === "mcq" &&
+                ind === props.questionInd && (
+                  <McqQuestion questionInd={props.questionInd} />
+                )}
+              {data.questions[props.questionInd].QuesType === "maq" &&
+                ind === props.questionInd && (
+                  <MaqQuestion questionInd={props.questionInd} />
+                )}
+              {data.questions[props.questionInd].QuesType === "essay" &&
+                ind === props.questionInd && (
+                  <EssayQuestion questionInd={props.questionInd} />
+                )}
+            </>
+          ))}
         </div>
       </div>
     </>

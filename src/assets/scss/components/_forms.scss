@@ -1,0 +1,23 @@
+textarea {
+  border: 2px solid #e8e9f3;
+  border-radius: 10px;
+  transition: 0.1s cubic-bezier(0.65, 0.05, 0.36, 1);
+  padding: 0.375rem 0.75rem;
+  width: 95%;
+
+  &::placeholder {
+    transition: all 2s ease;
+    font-size: 15px;
+    color: #9598ae;
+  }
+
+  &:focus {
+    border-color: $primary;
+
+    ~ label {
+      top: 0px;
+      left: 10px;
+      color: $primary;
+    }
+  }
+}

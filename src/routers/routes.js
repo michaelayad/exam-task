@@ -1,5 +1,6 @@
 import Exam from "../views/exam";
 import Home from "../views/home";
+import Result from "../views/result";
 
 const routes = [
   {
@@ -9,6 +10,10 @@ const routes = [
   {
     path: "/exam",
     element: <Exam />,
+  },
+  {
+    path: "/result",
+    element: <Result />,
   },
 ];
 
