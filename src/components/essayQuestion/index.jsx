@@ -27,11 +27,32 @@ function EssayQuestion({ ...props }) {
       <div className="card-body">
         <div>{parse(questions[props.questionInd]?.QuesTxt)}</div>
         <div className="py-3">
-          <textarea
-            placeholder="Enter Your Answer Here"
-            value={ans}
-            onChange={handleChange}
-          ></textarea>{" "}
+          {props.mode === "edit" ? (
+            <textarea
+              placeholder="Enter Your Answer Here"
+              value={ans}
+              onChange={handleChange}
+            ></textarea>
+          ) : (
+            <div>
+              <div className="py-2">
+                <p className="text-primary fw-bold fs-3">Model answer</p>
+                <p className="fs-4 border border-2">
+                  {questions[props.questionInd]?.QuesRightAns}
+                </p>
+              </div>
+              <div className="py-2">
+                <p className="text-primary fw-bold fs-3">Your answer</p>
+                <p className="fs-4 border border-2">
+                  {questions[props.questionInd]?.userAnswer || (
+                    <span className="text-secondary fs-5">
+                      you didn't answer this question
+                    </span>
+                  )}
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

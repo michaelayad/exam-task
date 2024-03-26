@@ -14,15 +14,27 @@ const Questions = ({ ...props }) => {
             <>
               {data.questions[props.questionInd].QuesType === "mcq" &&
                 ind === props.questionInd && (
-                  <McqQuestion questionInd={props.questionInd} />
+                  <McqQuestion
+                    questionInd={props.questionInd}
+                    key={ind}
+                    mode={props.mode}
+                  />
                 )}
               {data.questions[props.questionInd].QuesType === "maq" &&
                 ind === props.questionInd && (
-                  <MaqQuestion questionInd={props.questionInd} />
+                  <MaqQuestion
+                    questionInd={props.questionInd}
+                    key={ind}
+                    mode={props.mode}
+                  />
                 )}
               {data.questions[props.questionInd].QuesType === "essay" &&
                 ind === props.questionInd && (
-                  <EssayQuestion questionInd={props.questionInd} />
+                  <EssayQuestion
+                    questionInd={props.questionInd}
+                    key={ind}
+                    mode={props.mode}
+                  />
                 )}
             </>
           ))}

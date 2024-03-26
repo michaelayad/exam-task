@@ -31,6 +31,24 @@ function MaqQuestion({ ...props }) {
       setAns([...ans.slice(0, ind), true, ...ans.slice(ind + 1)]);
     }
   };
+  const getElementClasses = (ind) => {
+    if (questions[props.questionInd].QuesRightAns[ind] === "true")
+      return "border border-1 text-white bg-success rounded-circle mb-2 px-2";
+    else {
+      if (
+        questions[props.questionInd].userAnswer[ind] &&
+        questions[props.questionInd].QuesRightAns[ind] === "true"
+      )
+        return "border border-1 text-white bg-success rounded-circle mb-2 px-2";
+      else if (
+        questions[props.questionInd].userAnswer[ind] &&
+        questions[props.questionInd].QuesRightAns[ind] === "false"
+      )
+        return "border border-1 text-white bg-danger rounded-circle mb-2 px-2";
+      else
+        return "border border-1 text-primary bg-white rounded-circle mb-2 px-2";
+    }
+  };
   return (
     <div className="row card border shadow-sm mb-3">
       <div className="card-header bg-light">
@@ -39,34 +57,46 @@ function MaqQuestion({ ...props }) {
       <div className="card-body">
         <div>{parse(questions[props.questionInd]?.QuesTxt)}</div>
         <div>
-          {questions[props.questionInd]?.QuesAns?.map((answer, ind) => (
-            <div className="row gx-1 justify-content-start" key={ind}>
-              <div className="col-auto">
-                <button
-                  type="button"
-                  className={`btn border border-1 ${
-                    ans[ind] && "btn-primary"
-                  } btn-sm rounded-full mx-2 ${
-                    !ans[ind] && "text-primary bg-white"
-                  }`}
+          {questions[props.questionInd]?.QuesAns?.map((answer, ind) => {
+            return props.mode === "edit" ? (
+              <div className="row gx-1 justify-content-start" key={ind}>
+                <div className="col-auto">
+                  <button
+                    type="button"
+                    className={`btn border border-1 ${
+                      ans[ind] && "btn-primary"
+                    } btn-sm rounded-full mx-2 ${
+                      !ans[ind] && "text-primary bg-white"
+                    }`}
+                    onClick={() => {
+                      handleAnswerClick(ind);
+                    }}
+                  >
+                    {answer?.buttons?.point}
+                  </button>
+                </div>
+                <div
+                  className="col"
                   onClick={() => {
                     handleAnswerClick(ind);
                   }}
+                  style={{ cursor: "pointer" }}
                 >
-                  {answer?.buttons?.point}
-                </button>
+                  {parse(answer.txt)}
+                </div>
               </div>
-              <div
-                className="col"
-                onClick={() => {
-                  handleAnswerClick(ind);
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                {parse(answer.txt)}
+            ) : (
+              <div className="row gx-1 justify-content-start" key={ind}>
+                <div className="col-auto">
+                  <div className={getElementClasses(ind)}>
+                    {" "}
+                    {answer?.buttons?.point}
+                  </div>
+                </div>
+                <div className="col-auto">{parse(answer.txt)}</div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </div>
