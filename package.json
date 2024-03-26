@@ -1,6 +1,7 @@
 {
   "name": "exam-task",
   "version": "0.1.0",
+  "homepage": "https://michaelayad.github.io/exam-task",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.2",
@@ -9,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "gh-pages": "^6.1.1",
     "html-react-parser": "^5.1.9",
     "immer": "^10.0.4",
     "node-sass": "^7.0.3",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
