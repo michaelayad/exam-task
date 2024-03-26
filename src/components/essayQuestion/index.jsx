@@ -25,7 +25,9 @@ function EssayQuestion({ ...props }) {
         {questions[props.questionInd]?.QuesHeadTxt}
       </div>
       <div className="card-body">
-        <div>{parse(questions[props.questionInd]?.QuesTxt)}</div>
+        <div style={{ maxWidth: "100%" }}>
+          {parse(questions[props.questionInd]?.QuesTxt)}
+        </div>
         <div className="py-3">
           {props.mode === "edit" ? (
             <textarea
